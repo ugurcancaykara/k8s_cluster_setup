@@ -24,24 +24,18 @@
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
-  <summary>Studies</summary>
+  <summary>Setups</summary>
   <ol>
     <li>
       <a href="https://github.com/Ugurcancaykara/k8s_cluster_setup/vanilla_k8s_aws">Vanilla K8s setup on AWS with using terraform and ansible </a>
-      <ul>
-        <li><a href="#built-with">Make necessary adjustments on vars.tfvars file and ready to go.</a></li>
-      </ul>
-      <ul>
-        <li><a href="#built-with">Ansible automated inside the terraform code blocks.</a></li>
-      </ul>
     </li>
   </ol>
 </details>
 
 
 
-<!-- ABOUT THE Notes -->
-## About The Notes
 
-I was having struggling organizing my notes that's why I choosed github to store my notes! 
+## About repository
+
+I was having struggling organizing my different kind of setup
 

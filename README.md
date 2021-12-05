@@ -27,7 +27,7 @@
   <summary>Setups</summary>
   <ol>
     <li>
-      <a href="https://github.com/Ugurcancaykara/k8s_cluster_setup/vanilla_k8s_aws">Vanilla K8s setup on AWS with using terraform and ansible </a>
+      <a href="https://github.com/Ugurcancaykara/k8s_cluster_setup/tree/master/vanilla_k8s_aws/tf-infra">Vanilla K8s setup on AWS with using terraform and ansible </a>
     </li>
   </ol>
 </details>

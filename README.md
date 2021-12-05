@@ -37,5 +37,5 @@
 
 ## About repository
 
-I was having struggling organizing my different kind of setup
+I was having struggling organizing my different kind of setups
 

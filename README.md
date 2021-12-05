@@ -27,7 +27,7 @@
   <summary>Studies</summary>
   <ol>
     <li>
-      <a href="https://github.com/Ugurcancaykara/k8s_clusters_setup/vanilla_k8s_aws">Vanilla K8s setup on AWS with using terraform and ansible </a>
+      <a href="https://github.com/Ugurcancaykara/k8s_cluster_setup/vanilla_k8s_aws">Vanilla K8s setup on AWS with using terraform and ansible </a>
       <ul>
         <li><a href="#built-with">Make necessary adjustments on vars.tfvars file and ready to go.</a></li>
       </ul>

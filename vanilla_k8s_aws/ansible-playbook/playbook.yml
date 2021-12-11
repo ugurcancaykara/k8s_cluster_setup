@@ -31,6 +31,11 @@
   become: yes
   tasks: 
 
+  - name: Prints two lines of messages, but only if there is an environment value set
+    ansible.builtin.debug:
+      msg:
+      - "Provisioning based on YOUR_KEY which is: {{ hostvars[groups['master-nodes'][0]]['join_command'] }}"
+
   - name: join cluster
     shell: "{{ hostvars[groups['master-nodes'][0]]['join_command'] }} >> node_joined.txt"
     args:

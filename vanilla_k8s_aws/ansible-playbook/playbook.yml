@@ -26,6 +26,20 @@
    msg:
    - "Provisioning based on YOUR_KEY which is: {{ join_command }}"
 
+- hosts: master-nodes
+  tasks:
+  - name: Create a directory if it does not exist
+    file:
+      path: $HOME/.kube/
+      state: directory
+      mode: '0755'
+
+
+  - name: Copy admin conf to .kube/config
+    copy:
+      src: /etc/kubernetes/admin.conf
+      dest: $HOME/.kube/config
+      remote_src: yes
 
 - hosts: worker-nodes
   become: yes

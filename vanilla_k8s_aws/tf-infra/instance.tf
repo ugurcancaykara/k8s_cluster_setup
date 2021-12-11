@@ -52,7 +52,7 @@ module "jump-instance" {
     Environment = "test"
     Jump        = "true"
   }
-  user_data = file("user_data.sh")
+  user_data = file("bastion_user_data.sh")
 }
 
 

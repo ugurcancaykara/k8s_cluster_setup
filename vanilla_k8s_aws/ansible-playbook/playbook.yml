@@ -1,14 +1,14 @@
 - hosts: all
   become: yes
   roles:
-  - {{ role: roles/common }}
-  - {{ role: roles/docker }}
+  - { role: roles/common }
+  - { role: roles/docker }
 
 
 - hosts: master-nodes
   become: yes
   roles:
-  - {{ role: roles/master }}
+  - { role: roles/master }
 
 - hosts: master-nodes
   become: yes
@@ -21,10 +21,16 @@
     set_fact:
       join_command: "{{ join_command_raw.stdout_lines[0] }}"
 
+  - name: Prints two lines of messages, but only if there is an environment value set
+  ansible.builtin.debug:
+   msg:
+   - "Provisioning based on YOUR_KEY which is: {{ join_command }}"
+
 
 - hosts: worker-nodes
   become: yes
   tasks: 
+
   - name: join cluster
     shell: "{{ hostvars[groups['master-nodes'][0]]['join_command'] }} >> node_joined.txt"
     args:

@@ -12,7 +12,7 @@ Then
 
 ### Run
 
-- ansible-playbook main.yml
+- ansible-playbook main.yml -i host.ini --private-key ~/.ssh/id_rsa -u ubuntu
 
 ### Dones
 -

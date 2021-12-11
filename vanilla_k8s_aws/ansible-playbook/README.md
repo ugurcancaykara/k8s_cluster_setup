@@ -12,6 +12,9 @@ Then
 
 ### Run
 
+ssh all-instances with private-key at least once.
+change host.ini then Ready to go
+
 - ansible-playbook main.yml -i host.ini --private-key ~/.ssh/id_rsa -u ubuntu
 
 ### Dones
